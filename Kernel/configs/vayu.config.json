@@ -1,0 +1,31 @@
+"kernelSource": {
+	"name": "vayu_kernel",
+	"repo": "https://github.com/Z3Z07/vayu_kernel.git",
+	"branch": "master",
+	"device": "vayu",
+	"defconfig": "vayu_user_defconfig"
+}
+
+"toolchains": [
+	{
+		"name": "proton-clang",
+		"repo": "https://github.com/kdrag0n/proton-clang",
+		"branch": "master",
+		"binaryEnv": ["./bin"]
+	}
+]
+
+"params": {
+	"ARCH": "arm64",
+	"CC": "clang",
+	"externalCommands": {
+		"CLANG_TRIPLE": "aarch64-linux-gnu-",
+		"CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+		"CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+	}
+}
+
+"AnyKernel3": {
+	"use": true,
+	"release": true,
+}
