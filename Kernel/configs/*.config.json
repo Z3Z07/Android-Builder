@@ -9,12 +9,12 @@
     },
     "toolchains": [
        {
-         "name": "clang",
+         "name": "clang-r383902b.tar.gz",
          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/android-11.0.0_r1/clang-r383902b.tar.gz" ,
          "binaryEnv": ["./bin"]
        },
        {
-         "name": "gcc",
+         "name": "android-11.0.0_r1.tar.gz",
          "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-11.0.0_r1.tar.gz",
          "binaryEnv": ["bin"]
        }
