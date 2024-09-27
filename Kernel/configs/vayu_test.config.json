@@ -28,7 +28,7 @@
       },
       "AnyKernel3": {
         "use": true,
-        "release": true,
+        "release": true
       },
       "enableKernelSU": false,
       "enableLXC": false
