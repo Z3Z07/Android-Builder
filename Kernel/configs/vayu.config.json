@@ -32,10 +32,13 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-        "PATH": "aosp-clang/bin:gcc-64-binutils/bin:gcc-32-binutils/bin:${PATH}",
-        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-        "CLANG_TRIPLE": "aarch64-linux-gnu-"
+		"CROSS_COMPILE_COMPAT": "arm-linux-androideabi-",
+		"O": "out",
+		"DTC_EXT": "dtc",
+		"LLVM": "1",
+		"LLVM_IAS": "1"
       }
     },
     "AnyKernel3": {
