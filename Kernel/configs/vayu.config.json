@@ -9,20 +9,18 @@
     },
     "toolchains": [
       {
-        "name": "aosp-clang",
-        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "name": "gcc",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android11-release",
-        "binaryEnv": ["/bin"]
+        "binaryEnv": ["./bin"]
       }
     ],
     "params": {
       "ARCH": "arm64",
-      "CC": "clang",
+      "CC": "gcc",
       "externalCommands": {
         "PATH": "aosp-clang/bin:${PATH}",
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-		"CROSS_COMPILE_COMPAT": "arm-linux-androideabi-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
 		"DTC_EXT": "dtc"
       }
     },
