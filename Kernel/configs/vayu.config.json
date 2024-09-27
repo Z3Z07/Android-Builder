@@ -9,22 +9,35 @@
     },
     "toolchains": [
       {
-        "name": "gcc",
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android11-release",
-        "binaryEnv": ["/bin"]
+        "name": "proton-clang",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "binaryEnv": ["./bin"]
       }
     ],
+    "enableCcache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc",
+      "CC": "clang",
       "externalCommands": {
-        "PATH": "aosp-clang/bin:${PATH}",
-        "CROSS_COMPILE": "aarch64-linux-android-",
-		"DTC_EXT": "dtc"
+		"PATH": "proton-clang/bin:${path}",
+		"SUBARCH": "arm64",
+		"COMPILER": "clang",
+		"CC": "clang",
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+		"LD_LIBRARY_PATH": "proton-clang/lib",
+		"LD": "ld.lld",
+		"AR": "llvm-ar",
+		"NM": "llvm-nm",
+		"OBJCOPY": "llvm-objcopy",
+		"OBJDUMP": "llvm-objdump",
+		"STRIP": "llvm-strip",
+		"ld-name": "lld",
+		"KBUILD_COMPILER_STRING": "Proton Clang"
       }
     },
-    "AnyKernel3": {
+	"AnyKernel3": {
       "use": true,
       "release": true
     },
