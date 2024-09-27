@@ -11,19 +11,19 @@
       {
         "name": "aosp-clang",
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
-        "branch": "android11-qpr2-release",
+        "branch": "android-11.0.0_r48",
         "binaryEnv": ["./bin"]
       },
       {
         "name": "gcc-64-binutils",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android11-qpr2-release",
+        "branch": "android-11.0.0_r48",
         "binaryEnv": ["./bin"]
       },
       {
         "name": "gcc-32-binutils",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
-        "branch": "android11-qpr2-release",
+        "branch": "android-11.0.0_r48",
         "binaryEnv": ["./bin"]
       }
     ],
@@ -35,7 +35,9 @@
         "PATH": "aosp-clang/bin:gcc-64-binutils/bin:gcc-32-binutils/bin:${PATH}",
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-        "CLANG_TRIPLE": "aarch64-linux-gnu-"
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+		"SUBARCH": "arm64",
+		"DTC_EXT": "dtc"
       }
     },
     "AnyKernel3": {
