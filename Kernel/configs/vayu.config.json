@@ -12,7 +12,7 @@
         "name": "proton-clang",
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
-        "binaryEnv": ["bin"]
+        "binaryEnv": ["./bin"]
       }
     ],
     "enableCcache": true,
@@ -20,21 +20,9 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-		"PATH": "proton-clang/bin:${path}",
-		"SUBARCH": "arm64",
-		"COMPILER": "clang",
-		"CC": "clang",
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-		"LD_LIBRARY_PATH": "proton-clang/lib",
-		"LD": "ld.lld",
-		"AR": "llvm-ar",
-		"NM": "llvm-nm",
-		"OBJCOPY": "llvm-objcopy",
-		"OBJDUMP": "llvm-objdump",
-		"STRIP": "llvm-strip",
-		"ld-name": "lld",
-		"KBUILD_COMPILER_STRING": "Proton Clang"
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-"
       }
     },
 	"AnyKernel3": {
