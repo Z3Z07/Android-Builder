@@ -12,19 +12,19 @@
         "name": "aosp-clang",
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
         "branch": "android11-release",
-        "binaryEnv": ["./bin"]
+        "binaryEnv": ["/bin"]
       },
       {
         "name": "gcc-64-binutils",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android11-release",
-        "binaryEnv": ["./bin"]
+        "binaryEnv": ["/bin"]
       },
       {
         "name": "gcc-32-binutils",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
         "branch": "android11-release",
-        "binaryEnv": ["./bin"]
+        "binaryEnv": ["/bin"]
       }
     ],
     "enableCcache": true,
