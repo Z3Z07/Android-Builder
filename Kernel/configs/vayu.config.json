@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "vayu_kernel",
-      "repo": "https://github.com/Z3Z07/Xiaomi_Kernel_OpenSource.git",
+      "repo": "https://github.com/Z3Z07/vayu_kernel.git",
       "branch": "testing",
       "device": "vayu",
       "defconfig": "vayu_user_defconfig"
