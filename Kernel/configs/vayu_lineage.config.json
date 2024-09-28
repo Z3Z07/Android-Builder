@@ -5,7 +5,7 @@
       "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8150.git",
       "branch": "lineage-19.1",
       "device": "vayu",
-      "defconfig": "vayu_user_defconfig"
+      "defconfig": "vendor/vayu_defconfig"
     },
     "toolchains": [
       {
