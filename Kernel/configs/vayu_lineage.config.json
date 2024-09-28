@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "vayu_kernel",
-      "repo": "https://github.com/Z3Z07/Xiaomi_Kernel_OpenSource.git",
-      "branch": "testing",
+      "name": "vayu_lineage",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8150.git",
+      "branch": "lineage-19.1",
       "device": "vayu",
       "defconfig": "vayu_user_defconfig"
     },
@@ -11,19 +11,19 @@
       {
         "name": "aosp-clang",
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
-        "branch": "android-11.0.0_r48",
+        "branch": "android-12.1.0_r27",
         "binaryEnv": ["./bin"]
       },
       {
         "name": "gcc-64-binutils",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android-11.0.0_r48",
+        "branch": "android-12.1.0_r27",
         "binaryEnv": ["./bin"]
       },
       {
         "name": "gcc-32-binutils",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
-        "branch": "android-11.0.0_r48",
+        "branch": "android-12.1.0_r27",
         "binaryEnv": ["./bin"]
       }
     ],
