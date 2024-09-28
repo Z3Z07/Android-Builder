@@ -11,7 +11,7 @@
       {
         "name": "aosp-clang",
         "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git",
-        "branch": "lineage-20",
+        "branch": "lineage-20.0",
         "binaryEnv": ["./bin"]
       },
       {
