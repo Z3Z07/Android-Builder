@@ -97,7 +97,7 @@ jobs:
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar llvm g++-multilib bison gperf zlib1g-dev automake
 
           git clone -b android11-qpr2-release https://android.googlesource.com/platform/system/libufdt libufdt
-          sudo cp libufdt/utils/src/mkdtboimg.py /usr/bin/mkdtboimg
+          sudo cp libufdt/utils/src/mkdtboimg.py /usr/bin/mkdtimg
 
       # Initialize ccache
       - name: 🚄 Setup ccache
